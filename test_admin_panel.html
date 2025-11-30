@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI500 – IBS Team</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+/* GENERAL */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #0d1117;
+  color: #e4e4e4;
+  scroll-behavior: smooth;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background: #161b22;
+  z-index: 999;
+  padding: 1rem 2rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar a {
+  color: #58a6ff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #1f6feb;
+}
+
+/* HERO / MAIN */
+.hero {
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.hero img {
+  max-width: 300px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+  border-radius: 10px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  color: #58a6ff;
+}
+
+/* SECTIONS */
+section {
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 2.2rem;
+  color: #58a6ff;
+  margin-bottom: 2rem;
+}
+
+ul, ol {
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.card {
+  background: #21262d;
+  padding: 1.5rem;
+  border-radius: 10px;
+  flex: 1 1 calc(50% - 1rem);
+  min-width: 250px;
+}
+
+.card h3 {
+  margin-bottom: 1rem;
+  color: #39d353;
+}
+
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.member {
+  text-align: center;
+  flex: 1 1 calc(33% - 2rem);
+  min-width: 200px;
+}
+
+.member img {
+  width: 150px;
+  margin-bottom: 1rem;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .cards {
+    flex-direction: column;
+  }
+  .team-grid {
+    flex-direction: column;
+  }
+}
+</style>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <nav class="navbar">
+      <a href="#main">Asosiy</a>
+      <a href="#problem">Muammo</a>
+      <a href="#solution">Yechim</a>
+      <a href="#how">Qanday yechamiz?</a>
+      <a href="#team">Jamoa</a>
+      <a href="#roadmap">Reja (Roadmap)</a>
+    </nav>
+  </header>
+
+  <!-- MAIN SECTION -->
+  <section id="main">
+    <div class="hero">
+      <img src="hero-image.png" alt="AI500 IBS Team">
+      <h1>AI500 – IBS Team</h1>
+      <p>Asosiy Muammo: Ta’lim</p>
+    </div>
+  </section>
+
+  <!-- PROBLEM SECTION -->
+  <section id="problem">
+    <h2>Muammo: O'quv Markazlarda CRM Yo'qligi.</h2>
+    <ul>
+      <li>O‘quvchilar davomati hali ham qog'oz shaklda</li>
+      <li>Uyga vazifalar qog'ozda ekani</li>
+      <li>Uyga vazifalarni tekshirish juda sekin</li>
+      <li>Ota-onalar farzandi rivojlanishini real vaqtda kuzata olmaydi</li>
+      <li>Dars materiallari zerikarli bo‘lgani sabab motivatsiya pasayishi.</li>
+      <li>O'quv markaz o'quvchilari aniq reyting yo'qligi.</li>
+      <li>Uyga vazifalarni mobile app/web-site/telegram web app orqali qilinganda cheatingni(Skrinshot qilish, dasturdan chiqish) detect qil-a olmaslik.</li>
+    </ul>
+    <h2>Muammo: Online darslar soni kamligi</h2>
+    <ul>
+      <li>Yoshlar biron bir sohada online darslarni aniq qayerdan top-a olmasligi</li>
+      <li>Online dars platformalaridagi testlar soni kamligi</li>
+      <li>Online dars platformalaridagi testlar jarayonidagi cheatinglar</li>
+      <li>O'quvchilar bir platforma orqali bir vaqtning o'zida ham offline ham online darslarda o'qiy olmasligi</li>
+    </ul>
+  </section>
+
+  <!-- SOLUTION SECTION -->
+  <section id="solution">
+    <h2>Bizning yechim</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Cheating detection</h3>
+        <p>Har bir o‘quvchi uyga vazifa qilish jarayonida, cheating qilayotgani yoki yo'qligini bilish.</p>
+      </div>
+      <div class="card">
+        <h3>Avtomatik uy vazifasi tekshiruvi</h3>
+        <p>AI real vaqt rejimida ishlaydi va xatolarni tahlil qiladi.</p>
+      </div>
+      <div class="card">
+        <h3>Haftalik testlar</h3>
+        <p>O‘quvchilar bilim o'zlashtirishini har hafta test qilish orqali aniqlash (Agar o'quv markaz/kurs egasi ushbu funksiyani guruxi uchun yoqsa!).</p>
+      </div>
+      <div class="card">
+        <h3>O‘quvchi rivojlanish paneli</h3>
+        <p>O‘qituvchilar o'z guruxlaridagi o'quvchilar uyga vazifani necha foiz qilganini bilishlari, ota-onalar esa o'z farzandlari uyga vazifani necha foiz qilganini ko'rish imkoni.</p>
+      </div>
+      <div class="card">
+        <h3>Gamifikatsiya va mukofotlar</h3>
+        <p>O‘quvchilar motivatsiya uchun badge va ballarga ega bo‘lishadi.</p>
+      </div>
+      <div class="card">
+        <h3>Ai/O'qituvchi uyga vazifalari.</h3>
+        <p>O'qtuvchi o'zi hohlasa uyga vazifani qo'shadi yoki Ai o'qtuvchiga darsga muvofiq uyga vazifalarni o'quvchilarga beradi.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW TO SOLVE SECTION -->
+  <section id="how">
+    <h2>Jamoamiz bu muammoni qanday yecha oladi?</h2>
+    <ol>
+      <li>O‘quvchining hozirgi darajasini, o'quvchi tanlagan soha bo'yicha aniqlaymiz (Agar o'quvchi online kursga yozialyotgan bo'lsa!)</li>
+      <li>AI yordamida topshiriqlarni avtomatik yaratamiz</li>
+      <li>Uy vazifasini avtomatik tekshiramiz</li>
+      <li>O‘quvchi statistikasini real vaqtda ko‘rsatamiz</li>
+      <li>Gamifikatsiya orqali motivatsiya oshiramiz</li>
+      <li>O‘qituvchi va Administratorlar barcha jarayonni boshqarishini ta'minlaymiz.</li>
+      <li>O‘qituvchi, Administratorlar va Ota-Onalarga cheating haqida habar berishni ta'minlaymiz.</li>
+    </ol>
+  </section>
+
+  <!-- TEAM SECTION -->
+  <section id="team">
+    <h2>Bizning jamoa</h2>
+    <div class="team-grid">
+      <div class="member">
+        <img src="me.png" alt="Team Member">
+        <h3>Ibrohim Bahodirov</h3>
+        <p>Team Leader, Back-End developer + Front-End basic Programmer</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROADMAP SECTION -->
+  <section id="roadmap">
+    <h2>Roadmap</h2>
+    <ul>
+      <li>1-chorak – Prototip yaratish</li>
+      <li>2-3-chorak – Online & Offline kurslar bilan MVP(Faqatgina web-site va telegram bot web-app. Mobile App esa jamoaga Mobile App dasturchi qo'shilgach.)</li>
+      <li>4-chorak – Mahalliy ta’lim markazlarida test qilish</li>
+      <li>5-chorak – Ommaviy taqdimot</li>
+    </ul>
+  </section>
+
+  <script>
+  // Smooth scroll for navbar links
+  document.querySelectorAll('nav a').forEach(link => {
+    link.addEventListener('click', function(e){
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      target.scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+  </script>
+
+</body>
+</html>
+
